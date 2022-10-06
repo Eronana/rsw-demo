@@ -3,15 +3,16 @@ import { ReactNode } from 'react';
 export default function Button({
   width = 170,
   inverse = false,
-  children,
+  text = 'Learn More'
 }:{
   width?:number;
   inverse?:boolean;
-  children?:ReactNode
+  children?:ReactNode;
+  text?:string;
 }) {
-  const className = `w-[${width}px] h-[48px] text-xl rounded-[5px] `
+  const className = `h-[48px] text-xl rounded-[5px] `
     + (inverse ? 'bg-black text-white' : 'bg-white text-black');
-  return <button className = { className }>
-    { children }
+  return <button className = { className } style={{ width }}>
+    { text }
   </button>
 }
