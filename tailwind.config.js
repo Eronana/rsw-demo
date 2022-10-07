@@ -30,6 +30,7 @@ module.exports = {
         'crimson-text': ['Crimson Text'],
       },
       spacing: {
+        2.25: '9px',
         3.75: '15px',
         4.5: '18px',
         5.25: '21px',

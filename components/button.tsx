@@ -1,13 +1,10 @@
-import { ReactNode } from 'react';
-
 export default function Button({
   width = 170,
   inverse = false,
   text = 'Learn More'
 }:{
-  width?:number;
+  width?:number|string;
   inverse?:boolean;
-  children?:ReactNode;
   text?:string;
 }) {
   const className = `h-[48px] text-xl rounded-[5px] `
